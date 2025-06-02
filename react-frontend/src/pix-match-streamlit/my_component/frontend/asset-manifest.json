@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e345f796.css",
+    "main.js": "/static/js/main.f08f494d.js",
+    "static/js/453.ebb30fb8.chunk.js": "/static/js/453.ebb30fb8.chunk.js",
+    "static/media/background.mp3": "/static/media/background.36f6d7a96edd2ba6ec9a.mp3",
+    "static/media/fail.mp3": "/static/media/fail.6f4970801eff9ccd8a97.mp3",
+    "static/media/gameover.mp3": "/static/media/gameover.ad6872368906f8de483f.mp3",
+    "static/media/match.mp3": "/static/media/match.ad6872368906f8de483f.mp3",
+    "static/media/atom.png": "/static/media/atom.fccca92153925f0f5479.png",
+    "static/media/pinterest.png": "/static/media/pinterest.888861bb9a699764c1ae.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.7890ebb1991ceea33054.png",
+    "static/media/instagram.png": "/static/media/instagram.b691a9313791ac3058c8.png",
+    "static/media/spotify.png": "/static/media/spotify.e86427bbcdb154454fc1.png",
+    "static/media/bitcoin.png": "/static/media/bitcoin.f6317afbdc4adac00de4.png",
+    "static/media/snapchat.png": "/static/media/snapchat.0116ae1e7b7f118c22f3.png",
+    "static/media/telegram.png": "/static/media/telegram.5f84cad9a41e7e637466.png",
+    "static/media/meta.png": "/static/media/meta.ec83cd4aa695bbc9fe94.png",
+    "static/media/facebook-messenger.png": "/static/media/facebook-messenger.5d0ad84622ca9e2cae4d.png",
+    "static/media/bluetooth.png": "/static/media/bluetooth.2e82689d4c7c69e3f115.png",
+    "static/media/app-store-ios.png": "/static/media/app-store-ios.c6b0bf496a2a1265fa15.png",
+    "static/media/google.png": "/static/media/google.1df8f0233f17712b5c35.png",
+    "static/media/line.png": "/static/media/line.a48f527b96be0324dd29.png",
+    "static/media/after-effects.png": "/static/media/after-effects.5d964d75b25faf97c3e2.png",
+    "static/media/twitter.png": "/static/media/twitter.60598133e948f3e36f70.png",
+    "static/media/discord.png": "/static/media/discord.8eecbd78630176c784e8.png",
+    "static/media/behance.png": "/static/media/behance.4ba41ad42a569625fef6.png",
+    "static/media/facebook.png": "/static/media/facebook.11847e03ada611eb2580.png",
+    "static/media/visa.png": "/static/media/visa.0eaa8ddb05ec97587e04.png",
+    "static/media/photoshop.png": "/static/media/photoshop.5c86568654981542a092.png",
+    "static/media/apple.png": "/static/media/apple.cd08a7973478d749b097.png",
+    "static/media/paypal.png": "/static/media/paypal.a112054c919ba84b1d38.png",
+    "static/media/illustrator.png": "/static/media/illustrator.ebc73632cdf885482e4d.png",
+    "index.html": "/index.html",
+    "main.e345f796.css.map": "/static/css/main.e345f796.css.map",
+    "main.f08f494d.js.map": "/static/js/main.f08f494d.js.map",
+    "453.ebb30fb8.chunk.js.map": "/static/js/453.ebb30fb8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e345f796.css",
+    "static/js/main.f08f494d.js"
+  ]
+}
