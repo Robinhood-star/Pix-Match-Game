@@ -39,7 +39,8 @@ if not st.session_state.game_started:
     difficulty = st.radio("", ["easy", "medium", "hard"], horizontal=True)
 
     # Show preview image
-    st.image("1e507655-bbb5-4ea9-86fb-887b5b2de419.png", caption="Preview", use_column_width=True)
+  st.image("assets/Banner.jpg", use_column_width=True)
+
 
     if st.button("Start Game 🚀"):
         st.session_state.difficulty = difficulty
