@@ -38,10 +38,8 @@ if not st.session_state.game_started:
 
     difficulty = st.radio("", ["easy", "medium", "hard"], horizontal=True)
 
-    # ✅ Fixed indentation for this line
-   st.image("assets/Banner.jpg", use_container_width=True)
-
-
+    # ✅ Correct indentation and parameter usage
+    st.image("assets/Banner.jpg", use_container_width=True)
 
     if st.button("Start Game 🚀"):
         st.session_state.difficulty = difficulty
