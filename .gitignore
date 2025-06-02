@@ -1,0 +1,11 @@
+# React frontend
+react-frontend/node_modules/
+react-frontend/build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
