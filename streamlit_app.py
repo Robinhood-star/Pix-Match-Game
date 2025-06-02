@@ -3,19 +3,50 @@ from my_component import pix_match
 
 st.set_page_config(page_title="Pix Match", layout="wide")
 
-st.title("🧠 Pix Match - Memory Game")
+# Session state to track game start
+if "game_started" not in st.session_state:
+    st.session_state.game_started = False
 
-st.markdown("""
-### 🎯 How to Play
-1. Match the shown image with the one in the grid.
-2. Earn points and combo bonuses for correct picks.
-3. Time decreases — choose wisely!
+# If game hasn't started, show intro
+if not st.session_state.game_started:
+    st.title("🧠 Pix Match - Memory Game")
 
-Select difficulty to begin:
-""")
+    st.markdown("""
+    <style>
+        .intro-text { font-size: 18px; line-height: 1.6; }
+        .stButton>button {
+            background-color: #FF4B4B;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 0.5em 2em;
+            margin-top: 20px;
+        }
+        .stRadio > div { justify-content: center; }
+    </style>
+    """, unsafe_allow_html=True)
 
-difficulty = st.radio("Choose Difficulty:", ["easy", "medium", "hard"], horizontal=True)
-start = st.button("Start Game")
+    st.markdown("""
+    <div class='intro-text'>
+    🎯 <b>How to Play</b><br>
+    1. Match the shown image with the one in the grid.<br>
+    2. Earn points and combo bonuses for correct picks.<br>
+    3. Time decreases — choose wisely!<br><br>
+    Select difficulty to begin:
+    </div>
+    """, unsafe_allow_html=True)
 
-if start:
-    pix_match(difficulty=difficulty)
+    difficulty = st.radio("", ["easy", "medium", "hard"], horizontal=True)
+
+    # Show preview image
+    st.image("1e507655-bbb5-4ea9-86fb-887b5b2de419.png", caption="Preview", use_column_width=True)
+
+    if st.button("Start Game 🚀"):
+        st.session_state.difficulty = difficulty
+        st.session_state.game_started = True
+        st.experimental_rerun()
+
+# Game section
+else:
+    st.title("🎮 Pix Match Game Zone")
+    pix_match(st.session_state.difficulty)
