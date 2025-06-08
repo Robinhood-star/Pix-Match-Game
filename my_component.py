@@ -5,4 +5,4 @@ def pix_match(difficulty):
     st.markdown("#### 🎮 Game will appear below:")
 
     # Increase iframe height to fully display the game
-    st.components.v1.iframe("https://keen-mousse-d356d0.netlify.app", height=850)
+    st.components.v1.iframe("https://keen-mousse-d356d0.netlify.app", height=250)
