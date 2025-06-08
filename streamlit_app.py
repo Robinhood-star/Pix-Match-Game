@@ -47,7 +47,8 @@ if not st.session_state.game_started:
             st.rerun()
 
     with col2:
-        st.image("assets/Banner.jpg", use_container_width=True)
+        st.image("assets/Banner.jpg", width=450)
+
 
 # AFTER game starts — show only game
 else:
