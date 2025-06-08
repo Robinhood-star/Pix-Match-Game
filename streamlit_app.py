@@ -10,7 +10,7 @@ if "game_started" not in st.session_state:
 
 # If game hasn't started, show intro screen
 if not st.session_state.game_started:
-    # Create two columns for layout: left = text, right = image
+    # Two-column layout
     left_col, right_col = st.columns([1, 1])
 
     with left_col:
@@ -46,12 +46,22 @@ if not st.session_state.game_started:
         if st.button("Start Game 🚀"):
             st.session_state.difficulty = difficulty
             st.session_state.game_started = True
-            st.rerun()  # ✅ fixed from experimental_rerun
+            st.rerun()
 
     with right_col:
         st.image("assets/Banner.jpg", use_container_width=True)
 
-# If game has started, show the game interface
+# If game has started, show the game fullscreen without clutter
 else:
-    st.title("🎮 Pix Match Game Zone")
+    st.markdown("""
+    <style>
+        .block-container {
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+        }
+        header, footer { visibility: hidden; }
+    </style>
+    """, unsafe_allow_html=True)
+
+    # Only the game in fullscreen
     pix_match(st.session_state.difficulty)
