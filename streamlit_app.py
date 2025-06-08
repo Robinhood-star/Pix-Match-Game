@@ -46,7 +46,7 @@ if not st.session_state.game_started:
         if st.button("Start Game 🚀"):
             st.session_state.difficulty = difficulty
             st.session_state.game_started = True
-            st.experimental_rerun()
+            st.rerun()
 
     with right_col:
         st.image("assets/Banner.jpg", use_container_width=True)
