@@ -1,5 +1,26 @@
-import streamlit as st
+st.markdown(
+    """
+    <style>
+    .responsive-iframe {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        border: none;
+    }
 
-def pix_match(difficulty):
-    # Embed game fullscreen with no scroll
-    st.components.v1.iframe("https://keen-mousse-d356d0.netlify.app", height=1400, scrolling=False)
+    .responsive-iframe iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    <div class="responsive-iframe">
+        <iframe src="https://your-react-game.netlify.app" frameborder="0" allowfullscreen></iframe>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
