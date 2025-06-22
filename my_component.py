@@ -22,11 +22,11 @@ def pix_match(difficulty):
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 100%;   
         }
         </style>
         <div class="responsive-iframe">
-            <iframe src=https://keen-mousse-d356d0.netlify.app" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://keen-mousse-d356d0.netlify.app/" frameborder="0" allowfullscreen></iframe>
         </div>
         """,
         unsafe_allow_html=True
